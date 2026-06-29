@@ -76,7 +76,7 @@
             
         % Logo góc trái Header
         \node[anchor=west, inner sep=0pt] 
-            at ($(current page.north west) + (0cm, -0.8cm)$) {\includegraphics[height=2.0cm]{image/logo-header.png}};
+            at ($(current page.north west) + (0cm, -0.8cm)$) {\includegraphics[height=2.0cm]{../../image/logo-header.png}};
             
         % Text góc phải Header (Tự động lấy từ đối số thứ 3 của \titlebox)
         \node[anchor=east, text=white, font=\small\bfseries\sffamily] 
@@ -104,9 +104,9 @@
             \textcolor{black}{\faTiktok\hskip 4pt huymathster}
         };
 
-        % Số trang
-        \node[circle, fill=white, draw=amberorange, line width=1.5pt, text=deepblue, font=\large\bfseries\sffamily, inner sep=4pt, minimum size=0.8cm] 
-            at ($(current page.south east) + (-1.2cm, 0.6cm)$) {\thepage};
+        % Số trang (Thiết kế hình tròn cũ thu nhỏ)
+        \node[circle, fill=white, draw=amberorange, line width=1.5pt, text=deepblue, font=\large\bfseries, inner sep=0pt, minimum size=0.7cm] 
+            at ($(current page.south east) + (-1.0cm, 0.65cm)$) {\thepage};
     \end{tikzpicture}
 }
 
@@ -153,7 +153,7 @@
             \begin{minipage}[c]{4.2cm}
                 \centering
                 % --- ĐIỀU CHỈNH TỌA ĐỘ LOGO Ở ĐÂY ---
-                \hspace*{-0.5cm}\raisebox{-0.2cm}{\includegraphics[width=5.5cm]{image/logo.png}}
+                \hspace*{-0.5cm}\raisebox{-0.2cm}{\includegraphics[width=5.5cm]{../../image/logo.png}}
             \end{minipage}%
             \begin{minipage}[c]{11.5cm}
                 \centering\vspace{0.15cm}
@@ -1314,7 +1314,7 @@ Hàm số \( f(x) \) nghịch biến trên khoảng nào trong các khoảng sau
 }
 
 % ====== CÂU 55 (Câu 4) ======
-\questionTrueFalse{0}{55}{Cho hàm số \( f(x) \) có đạo hàm \( f'(x) = x(x-3)^3 \) với mọi \( x \in \mathbb{R} \). Các mệnh đề sau đúng hay sai.}{
+\questionTrueFalse{0}{55}{Cho hàm số \( f(x) \) có đạo hàm \( f'(x) = x(x-3)^3 \) với mọi \( x \in \mathbb{R} \). }{
     \textbf{a)} & Hàm số \( f(x) \) đồng biến trên khoảng \((-1; 0)\). 
     & \textcolor{amberorange}{$\bigcirc$} & \textcolor{amberorange}{$\bigcirc$} \\ \hline
     \textbf{b)} & Hàm số \( f(x) \) đồng biến trên khoảng \((-2; 1)\).
@@ -1375,8 +1375,7 @@ Hàm số \( f(x) \) nghịch biến trên khoảng nào trong các khoảng sau
     \node[below right] at (0,2) {$2$};
     \node[below right] at (0,1) {$1$};
 \end{tikzpicture}
-\end{center}
-Các mệnh đề sau đúng hay sai.}{
+\end{center}}{
     \textbf{a)} & Hàm số đồng biến trên khoảng \( (1; 2) \). 
     & \textcolor{amberorange}{$\bigcirc$} & \textcolor{amberorange}{$\bigcirc$} \\ \hline
     \textbf{b)} & \( f\left(\frac{1}{2}\right) > 0 \).
@@ -1406,8 +1405,7 @@ Các mệnh đề sau đúng hay sai.}{
             \draw[->] (y2) -- (y3);
             \draw[->] (y3) -- (y4);
         \end{tikzpicture}
-    \end{center}
-Khi đó:}{
+    \end{center}}{
     \textbf{a)} & Hàm số đã cho đồng biến trên các khoảng \((-\infty; -3)\) và \((-3; -2)\).
     & \textcolor{amberorange}{$\bigcirc$} & \textcolor{amberorange}{$\bigcirc$} \\ \hline
     \textbf{b)} & Hàm số đã cho đồng biến trên khoảng \((-\infty; 5)\).
@@ -1427,8 +1425,7 @@ Khi đó:}{
 {$-\infty$, $-3$, $0$, $3$, $+\infty$}
 \tkzTabLine{ , +, 0, -, d, -, 0, + }
 \end{tikzpicture}
-\end{center}
-Khi đó:}{
+\end{center}}{
     \textbf{a)} & Hàm số đồng biến trên khoảng \((-3; 0)\).
     & \textcolor{amberorange}{$\bigcirc$} & \textcolor{amberorange}{$\bigcirc$} \\ \hline
     \textbf{b)} & Hàm số nghịch biến trên khoảng \((0; 3)\).
@@ -1462,8 +1459,7 @@ Khi đó:}{
     \draw[dashed, line width=0.5pt] (-1,0) -- (-1,2);
     \draw[dashed, line width=0.5pt] (2,0) -- (2,-3) -- (0,-3);
 \end{tikzpicture}
-\end{center}
-Khi đó:}{
+\end{center}}{
     \textbf{a)} & Đồ thị hàm số cắt trục tung tại điểm có tung độ bằng 3.
     & \textcolor{amberorange}{$\bigcirc$} & \textcolor{amberorange}{$\bigcirc$} \\ \hline
     \textbf{b)} & Hàm số nghịch biến trên khoảng \((-3; 0)\).
